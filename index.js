@@ -123,14 +123,17 @@ const zones = {
 console.log(calculateShipping(zones, "Zone A", 7));
 // Output: 80
 
+
 function getCarNameById(carId) {
-  if (carId == 1) {
-    console.log(1);
-  } else if (carId == 2) {
-    console.log(2);
-  } else if (carId == 3) {
-    console.log(3);
-  } else {
-    console.log(carId);    
-  }
+ const cars = {
+  1: 'Audi',
+  2: 'Ferrari',
+  3: 'Mercedes',
+ }
+ return cars[carId]
 }
+
+console.log(getCarNameById(1));
+console.log(getCarNameById(2));
+console.log(getCarNameById(3));
+console.log(getCarNameById(5));
